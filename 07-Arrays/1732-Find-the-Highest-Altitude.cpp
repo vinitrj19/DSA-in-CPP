@@ -1,4 +1,5 @@
 /*
+ * Asked in Amazon, Microsoft, Meta & Google interviews
  * Problem Name: 1732. Find the Highest Altitude
  * Source: LeetCode
  * Difficulty: Easy

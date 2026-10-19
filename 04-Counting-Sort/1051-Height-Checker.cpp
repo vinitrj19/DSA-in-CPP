@@ -1,0 +1,22 @@
+/*
+ * Problem Name: 1051. Height Checker
+ * Source: LeetCode
+ * Difficulty: Easy
+ * Time Complexity: O(n log n)
+ * Space Complexity: O(n)
+ */
+
+class Solution {
+public:
+    int heightChecker(vector<int>& heights) {
+        vector<int> expected = heights;
+        sort(expected.begin(), expected.end());
+        int mismatchCount = 0;
+        for (int i = 0; i < heights.size(); ++i) {
+            if (heights[i] != expected[i]) {
+                mismatchCount++;
+            }
+        }
+        return mismatchCount;
+    }
+};
